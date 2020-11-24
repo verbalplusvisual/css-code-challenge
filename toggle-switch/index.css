@@ -50,14 +50,14 @@ label:after{
     transition: 0.4s linear;
 }
 
-:checked + label:before{
+input:checked + label:before{
     left: 505px;
     transition: 0.4s linear;
     background: white;
     border-color:#E6E7F2;
 }
 
-:checked + label:after{
+input:checked + label:after{
     transition: 0.4s linear;
     background: rgba(230, 231, 242, 0.15);
     border: 3px solid #4c537e;
