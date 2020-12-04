@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #7a86cb;
+    display: flex;
+    height: 100vh;
+}
+
+div{
+   margin: auto;
+   display: table;
+}
+
+input, label{
+    margin: auto;
+    transition: 0.2s linear;
+}
+
+input{
+    height: 50px;
+    width: 250px;
+    border: 2px solid #24283D;
+    border-radius: 5px;
+    background: #49517B;
+    outline: 0;
+    caret-color: transparent;
+    padding: 10px;
+}
+
+label{
+    position: relative;
+    top: 0px;
+    left: -240px;
+    width: 100px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+input:focus{
+    caret-color: #0027FF;
+    background: #7a86cb;
+    border: 2px solid #0027FF;
+}
+
+input:focus + label{
+    top: -25px;
+    background: #7a86cb;
+    color: #0027FF;
+    padding: 3px;
+    transition: 0.2s linear;
+}
+
+input:focus:valid{
+    border: 2px solid #383E5E;
+    color:  #383E5E;
+    transition: 0.2s linear;
+}
+
+input:focus:valid + label{
+    color: #383E5E;
+    transition: 0.2s linear;
+}
+
+input:valid{
+    background: #7a86cb;
+    color: white;
+    transition: 0.2s linear;
+}
+
+input:valid + label{
+    top: -25px;
+    background: #7a86cb;
+    color: #383E5E;
+    padding: 3px;
+    transition: 0.2s linear;
+}
